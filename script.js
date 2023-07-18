@@ -1,25 +1,14 @@
-const title = document.querySelector("#title")
-const subTitle = document.querySelector("#subTitle")
-const btnLightMode = document.querySelector("#lightMode")
-const btnDarkMode = document.querySelector("#darkMode")
-const html = document.querySelector("#html")
+const btnLightMode = document.querySelector("#lightModeBtn")
+const btnDarkMode = document.querySelector("#darkModeBtn")
+// const body = document.body
 
-btnLightMode.addEventListener('click', () => html.style.backgroundColor = "white")
-btnLightMode.addEventListener('click', () => title.style.color = "black")
-btnLightMode.addEventListener('click', () => title.style.backgroundColor = "white")
-btnLightMode.addEventListener('click', () => subTitle.style.color = "black")
-btnLightMode.addEventListener('click', () => subTitle.style.backgroundColor = "white")
-btnLightMode.addEventListener('click', () => btnLightMode.style.color = "black")
-btnLightMode.addEventListener('click', () => btnLightMode.style.backgroundColor = "white")
-btnLightMode.addEventListener('click', () => btnDarkMode.style.color = "black")
-btnLightMode.addEventListener('click', () => btnDarkMode.style.backgroundColor = "white")
+const everything = document.querySelector("*")
 
-btnDarkMode.addEventListener('click', () => html.style.backgroundColor = "black")
-btnDarkMode.addEventListener('click', () => title.style.color = "white")
-btnDarkMode.addEventListener('click', () => title.style.backgroundColor = "black")
-btnDarkMode.addEventListener('click', () => subTitle.style.color = "white")
-btnDarkMode.addEventListener('click', () => subTitle.style.backgroundColor = "black")
-btnDarkMode.addEventListener('click', () => btnLightMode.style.color = "white")
-btnDarkMode.addEventListener('click', () => btnLightMode.style.backgroundColor = "black")
-btnDarkMode.addEventListener('click', () => btnDarkMode.style.color = "white")
-btnDarkMode.addEventListener('click', () => btnDarkMode.style.backgroundColor = "black")
+
+// Dark Mode
+btnDarkMode.addEventListener('click', ()=>everything.style.backgroundColor = "#222")
+btnDarkMode.addEventListener('click', ()=>everything.style.color = '#eee')
+
+// Light Mode
+btnLightMode.addEventListener('click', ()=>everything.style.backgroundColor = "#eee")
+btnLightMode.addEventListener('click', ()=>everything.style.color = '#222')
